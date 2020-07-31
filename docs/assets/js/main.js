@@ -61,8 +61,72 @@ $(".hamburger").on("click", function () {
 $('.main-eventos__slider--content').slick({
   infinite: true,
   slidesToShow: 3,
+  slidesToScroll: 3,
+  dots: true,
+  responsive: [
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      infinite: true,
+      dots: true
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  });   
+
+$('.main-banner__content').slick({
+  infinite: true,
+  slidesToShow: 1,
   slidesToScroll: 1,
-});   
+  arrows: true,
+  responsive: [
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      infinite: true,
+      dots: true
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  });   
 
 $('.main-peregrinaje__content').slick({
   infinite: true,
@@ -106,7 +170,35 @@ $('.main-testimonio__content').slick({
   dots: true,
   autoplay: true,
   autoplaySpeed: 4000,
-});   
+  responsive: [
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      infinite: true,
+      dots: true
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+  });   
 
 $('.main-instagram__content').slick({
   infinite: true,
@@ -114,5 +206,44 @@ $('.main-instagram__content').slick({
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1000,
-  
-});   
+  responsive: [
+  {
+    breakpoint: 1024,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      infinite: true,
+      dots: true
+    }
+  },
+  {
+    breakpoint: 600,
+    settings: {
+      slidesToShow: 2,
+      slidesToScroll: 2
+    }
+  },
+  {
+    breakpoint: 480,
+    settings: {
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+    ]
+    
+  });   
+
+$(document).ready(function() {
+  $('.accordion__header').click(function() {
+
+    $(".accordion__body").not($(this).next()).slideUp(400);
+    $(this).next().slideToggle(400);
+    
+    $(".accordion__item").not($(this).closest(".accordion__item")).removeClass("open-accordion");
+    $(this).closest(".accordion__item").toggleClass("open-accordion");
+  });
+});
