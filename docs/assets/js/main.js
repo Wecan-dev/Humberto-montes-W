@@ -77,7 +77,7 @@ $('.main-eventos__slider--content').slick({
     breakpoint: 600,
     settings: {
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 2,
     }
   },
   {
@@ -93,6 +93,8 @@ $('.main-eventos__slider--content').slick({
     ]
   });   
 
+
+
 $('.main-banner__content').slick({
   infinite: true,
   slidesToShow: 1,
@@ -102,8 +104,8 @@ $('.main-banner__content').slick({
   {
     breakpoint: 1024,
     settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       infinite: true,
       dots: true
     }
@@ -174,8 +176,8 @@ $('.main-testimonio__content').slick({
   {
     breakpoint: 1024,
     settings: {
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToShow: 1,
+      slidesToScroll: 1,
       infinite: true,
       dots: true
     }

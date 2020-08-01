@@ -16,6 +16,8 @@
     transition-property: right, visibility;
     padding-top: 0px;
     z-index: 1;
+    color: #2196f3;
+    background-color: #eee;
   }
 
   .offcanvas-collapse.open {
