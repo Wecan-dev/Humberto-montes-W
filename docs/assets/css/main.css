@@ -2272,8 +2272,8 @@ hr{
 
 
 	.main-eventos__tab{
-		padding-top: 100px;
-
+		position: relative;
+		margin-top: -100px;
 
 	}
 	.main-tab__grid{
@@ -2330,6 +2330,25 @@ hr{
 		font-weight: 400;
 		text-align: center;
 	}
+	.nav-pills .nav-tab.active, .nav-pills .show>.nav-tab{
+		color: #007bff;
+		border-bottom: 2px solid #007bff;
+		padding: 20px 31px;
+	}
+	.nav-pills .nav-item__tab--numero .nav-tab.active, .nav-pills .show>.nav-tab{
+		color: #007bff;
+		border-bottom: 2px solid #007bff;
+		padding: 20px 15px;
+	}
+	.nav-pills .nav-item__tab--3 .nav-tab.active, .nav-pills .show>.nav-tab{
+		color: #007bff;
+		border-bottom: 2px solid #007bff;
+		padding: 20px 7px;
+	}
+	.nav-tab:hover{
+		color:  #757575;
+		text-decoration: none;
+	}
 	.nav-item__tab{
 		width: 14.2857%;
 		text-align: center;
@@ -2365,4 +2384,12 @@ hr{
 		background-color: #fff;
 		margin-bottom: 10px;
 		padding-top: 30px;
+	}
+	.main-eventos__background{
+		background-image: url('http://www.humbertomontes.com/assets/img/meeting2.jpg');
+		height: 400px;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
