@@ -940,7 +940,7 @@ a{
 }
 .barra-formulario div{
 	display: grid;
-	grid-template-columns: 100px 1000px;
+	grid-template-columns: 100px 600px;
 }
 .barra-formulario label{
 	align-self: center;
@@ -952,7 +952,7 @@ a{
 }
 .form-group{
 	display: grid;
-	grid-template-columns: 100px 1000px;
+	grid-template-columns: 100px 600px;
 }
 .form-group label{
 	align-self: center;
@@ -969,7 +969,7 @@ a{
 	justify-content: center;
 }
 .container-contacto{
-	width: 65%;
+	width: 100%;
 	height: 65%;
 	display: flex;
 	flex-direction: column;
@@ -989,15 +989,107 @@ a{
 .main-contacto__form--title{
 	display: flex;
 	justify-content: center;
-	width: 65%;
+	width: 100%;
+	padding-bottom: 30px;
 }
 .main-contacto__form{
-	padding-top: 72px;
+	padding-top: 30px;
 }
 
+.main-cuadro__twitter{
+	display: flex;
+	color: white;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 300;
+	font-size: 24px;
 
+}
+.main-cuadro__twitter p{
+	margin-bottom: 0rem;
+	padding-left: 10px;
+}
+.main-cuadro__twitter i{
+	align-self: center;
+}
 
+.icono-facebook{
+	background-color: #3b5998;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+	border-radius: 50%;
+	padding: 12px;
+	height: 45px;
+	color: white;
+	width: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5px;
+}
+.icono-facebook:hover{
+	background-color: #3b5998;
+	color: white;
+	text-decoration: none;
+}
+.icono-twitter{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+	border-radius: 50%;
+	padding: 12px;
+	background-color: #00aced;
+	height: 45px;
+	width: 45px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5px;
+}
+.icono-twitter:hover{
+	background-color: #00aced;
+	color: white;
+	text-decoration: none;
+}
+.icono-youtube{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+	border-radius: 50%;
+	padding: 12px;
+	background-color: #b00;
+	height: 45px;
+	color: white;
+	width: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5px;
+}
+.icono-youtube:hover{
+	background-color: #b00;
+	color: white;
+	text-decoration: none;
+}
+.icono-instagram{
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+	border-radius: 50%;
+	padding: 12px;
+	height: 45px;
+	width: 45px;
+	color: white;
+	background-color: #e4405f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5px;
+}
+.icono-instagram:hover{
+	background-color: #e4405f;
+	color: white;
+	text-decoration: none;
+}
 
+.main-redes__contacto{
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
 .titulo-contacto{
 	text-align: center;
 	font-size: 40px;
@@ -1095,6 +1187,7 @@ textarea{
 .main-contacto__content{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+	grid-gap: 40px;
 }
 
 
@@ -1786,13 +1879,46 @@ hr{
 	.navbar.fixed{
 		height: 55px;
 	}
+	.main-cuadro__twitter{
+		justify-content: center;
+	}
+	
+
 }
 
 @media (min-width: 768px) and (max-width: 991px){
 	.navbar{
 		background-color:#2196f3;
-		height: 50px;
+		height: 52px ! important;
 	}
+	.main-banner .mask .main-banner__text .main-banner__title p{
+		font-size: 40px;
+		line-height: 43px;
+	}
+	.cuadro-banner p{
+		font-size: 13px !important;
+		padding-bottom: 0px !important;
+	}
+	.cuadro-banner{
+		padding: 20px;
+	}
+	.main-banner .mask .main-banner__boxtext{
+		height: 58%;
+	}
+	.main-banner .slick-prev{
+		left: 4px;
+	}
+	.buttom-banner{
+		justify-content: flex-start;
+	}
+	.main-banner .slick-next{
+		right: 47px;
+	}
+	.grid-banner{
+		display: grid;
+		grid-template-columns: 136px 94px;
+	}
+
 	.main-nav__img{
 		position: relative;
 
@@ -2193,7 +2319,10 @@ hr{
 			grid-template-columns: 1fr 1fr;
 		}
 		.main-contacto{
-			height: 157vh;
+			height: 169vh;
+		}
+		.main-redes__contacto{
+			padding-top: 15px;
 		}
 		.main-contacto__form--title{
 			width: 100%;
@@ -2286,7 +2415,14 @@ hr{
 
 		}
 		.main-contacto{
-			height: 118vh;
+			height: 144vh;
+		}
+		.main-cuadro__twitter{
+			justify-content: center;
+
+		}
+		.main-redes__contacto{
+			padding-top: 25px;
 		}
 		.main-testimonio__text p{
 			padding: 1rem 25px;
@@ -2318,6 +2454,31 @@ hr{
 		.main-eventos__slider--content .slick-dots{
 			bottom: 318px;
 		}
+		.main-banner .mask .main-banner__text .main-banner__title p{
+			font-size: 45px;
+			line-height: 48px;
+		}
+		.cuadro-banner{
+			padding: 23px;
+			
+
+		}
+		.main-banner .mask .main-banner__boxtext{
+			height: 63%;
+		}
+		.main-contacto__content{
+			display: grid;
+			grid-template-columns: 605px 1fr;
+		}
+		.grid-banner{
+			grid-template-columns: 221px 94px;
+			display: grid;
+		}
+		.cuadro-banner p{
+			font-size: 18px !important;
+			padding-bottom: 0px !important;
+		}
+
 	}
 
 
@@ -2482,4 +2643,15 @@ hr{
 		background-color: #dc3545;
 		border-color: #dc3545;
 		margin-bottom: 20px;
+	}
+
+	@media (min-width: 375px) and (max-width: 550px){
+		.container-contacto{
+			width: 100%;
+		}
+	}
+	@media (min-width: 425px) and (max-width: 550px){
+		.container-contacto{
+			width: 100%;
+		}
 	}
