@@ -19,6 +19,9 @@ body{
 .main-iconos__content{
 	display: none;
 }
+.main-img__responsive--banner{
+	display: none;
+}
 .mask{
 	position: absolute;
 	top: 0;
@@ -234,10 +237,10 @@ button:focus{
 
 .main-banner .mask .main-banner__boxtext {
 	display: flex;
-	justify-content: flex-start;
+	¿
 	align-items: center;
 	width: 100%;
-	height: 65%;
+	height: 82%;
 }
 .main-banner .mask .main-banner__boxtext2 {
 	display: flex;
@@ -1234,19 +1237,9 @@ textarea{
 	align-items: center;
 	position: relative;
 }
-.main-diplomado__img mask{
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(128,76,0,0.85);
-	z-index: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.mask2{
+	
+	
 }
 .main-cuadro__title h1{
 	text-align: center;
@@ -1263,6 +1256,14 @@ textarea{
 }
 .main-diplomado__text{
 	text-align: center;
+}
+.main-title__table h3{
+	text-align: center;
+	font-family: 'Cormorant Garamond', serif;
+	font-weight: 300;
+	font-size: 24px;
+	color: #757575;
+	padding-bottom: 20px;
 }
 
 
@@ -1309,22 +1310,13 @@ textarea{
 	text-align: center;
 	color: #83837d;
 }
-.main-diplomado__flex{
-	display: grid;
-	grid-template-columns:  28% 25% 45%;
-	background-color: #f9f9f9;
-	padding: 8px;
-	border-bottom: 2px solid #ddd;
+.table td, .table th{
+	padding: 9px 27px;
 }
-.main-diplomado__flex:hover{
-	background-color: white;
+.table thead th{
+	vertical-align: top;
 }
-.main-diplomado__flex--white{
-	display: grid;
-	grid-template-columns: 28% 25% 45%;
-	padding:14px;
-	border-bottom: 2px solid #ddd;
-}
+
 .main-diplomado__flex--white:hover{
 	background-color: #f9f9f9;
 }
@@ -1343,15 +1335,34 @@ textarea{
 }
 .title-ciudad{
 	text-align: center;
-	margin-bottom: 2px;
+	margin-bottom: 0rem;
 	color: #00bcd4;
 	font-weight: 800;
+	font-family:'Lato', sans-serif;
+	font-size: 13px;
+}
+.table-text{
+	font-family:'Lato', sans-serif;
+	color: #757575;
+	
+	margin-bottom: 0rem;
+	text-align: center;
 }
 .title-inicio{
 	text-align: center;
-	margin-bottom: 2px;
+	margin-bottom: 0rem;
 	color: #9c27b0;
 	font-weight: 800;
+	font-family:'Lato', sans-serif;
+	font-size: 13px;
+}
+.title-contacto{
+	font-weight: 800;
+	font-family:'Lato', sans-serif;
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 0rem;
+	color: #00bcd4;
 }
 hr{
 	margin-bottom: 0rem;
@@ -1428,12 +1439,13 @@ hr{
 	height: 400px;
 }
 .main-peregrinaje__img{
-	background-image: url('main-peregrinaje__img');
+	background-image: url('http://www.humbertomontes.com/assets/img/peregrinaje.jpg');
 	height: 330px;
-	position: relative
+	position: relative;
+	background-size: cover;
 
 }
-.main-peregrinaje__img .mask2{
+.mask2{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1660,6 +1672,7 @@ hr{
 	background-image: url('http://www.humbertomontes.com/assets/img/libro.jpg');
 	height: 330px;
 	position: relative;
+	background-size: cover;
 }
 .main-libro mask{
 	position: absolute;
@@ -1703,6 +1716,24 @@ hr{
 		display: block;
 		width: 100%;
 		height: 50px;
+	}
+	.main-img__responsive--banner{
+		display: block;
+		background: #D7DEF5;
+	}
+	.main-grid__before::after{
+		display: none;
+	}
+	.main-grid__before::before{
+		display: none;
+	}
+	.img-responsive__banner{
+		width: 100%;
+	}
+	.img-responsive__banner2{
+		width: 100%;
+		background: #D7DEF5;
+
 	}
 	.main-redes__iconos{
 		display: flex;
@@ -1751,6 +1782,9 @@ hr{
 		height: 45px;
 		width: 45px;
 		background-color: #e4405f;
+	}
+	.navbar.fixed{
+		height: 55px;
 	}
 }
 
@@ -1883,7 +1917,7 @@ hr{
 			display: grid;
 			grid-template-columns: 1fr;
 
-			width: 90%;
+			width: 100%;
 
 		}
 		.main-about__background{
@@ -1922,6 +1956,12 @@ hr{
 			grid-template-columns: 36% 57% 76%;
 
 		}
+		.table-text{
+			font-size: 13px;
+		}
+		.table td, .table th{
+			padding: 5px 13px;
+		}
 		.main-diplomado__flex--white p{
 			font-size: 12px;
 		}
@@ -1954,13 +1994,26 @@ hr{
 		.main-diplomado__content--lugares{
 			padding-top: 0;
 		}
+		.main-table__content{
+			overflow-x: auto;
+			border: solid 1px #ddd;
+		}
 	}
+
 
 	@media (min-width: 768px) and (max-width: 991px){
 		.main-diplomado__fechas--grid{
 			overflow-x: auto;
 			width: 100%;
 			height: 322px;
+		}
+		.main-table__content{
+			overflow-x: auto;
+			border: solid 1px #ddd;
+			height: 300px;
+		}
+		.table td, .table th{
+			padding: 9px 10px;
 		}
 		.main-diplomado__flex p{
 			font-size: 12px;
@@ -2392,4 +2445,41 @@ hr{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+	}
+
+	.card.card-danger{
+		border-bottom: solid 3px #f44336;
+		border-radius: 3px;
+	}
+	.card{
+		box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12) ;
+	}
+	.main-video__content iframe{
+		width:100%;
+		height:600px;
+	}
+	.card-header{
+		background-color: #f44336;
+	}
+	.card-header h3{
+		color: white;
+		font-size: 16px;
+		font-family: 'Cormorant Garamond', serif;
+		font-weight: 300;
+		margin-bottom: 0rem;
+	}
+	.color-royal{
+		font-weight: 300;
+		color: #9c27b0;
+		font-family: 'Lato', sans-serif;
+		font-size: 20px;
+	}
+	.main-video {
+		padding-bottom: 50px;
+	}
+	.btn-danger{
+		color: #fff;
+		background-color: #dc3545;
+		border-color: #dc3545;
+		margin-bottom: 20px;
 	}
