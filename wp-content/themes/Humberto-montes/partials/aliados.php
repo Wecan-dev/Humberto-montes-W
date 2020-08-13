@@ -10,24 +10,14 @@
   </div>
   <div class="main-aliados__img--grid">
     <div class="main-aliados__img--content container">
-      <div class="main-aliados__img">
-        <img class="img-aliados" src="<?php echo get_template_directory_uri();?>/assets/img/7.jpg">
-      </div>
-      <div class="main-aliados__img">
-        <img class="img-aliados" src="<?php echo get_template_directory_uri();?>/assets/img/14.jpg">
-      </div>
-      <div class="main-aliados__img">
-        <img class="img-aliados" src="<?php echo get_template_directory_uri();?>/assets/img/18.jpg">
-      </div>
-      <div class="main-aliados__img">
-        <img class="img-aliados" src="<?php echo get_template_directory_uri();?>/assets/img/22.jpg">
-      </div>
-      <div class="main-aliados__img">
-        <img class="img-aliados" src="<?php echo get_template_directory_uri();?>/assets/img/23.jpg">
-      </div>
-      <div class="main-aliados__img">
-        <img class="img-aliados" src="<?php echo get_template_directory_uri();?>/assets/img/25.png">
-      </div>
+      <?php $args = array( 'post_type' => 'Aliados');?>   
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+        <div class="main-aliados__img">
+          <img class="img-aliados" alt="<?php the_title(); ?>" src="<?php echo get_the_post_thumbnail_url(); ?>">
+        </div>
+        <?php endwhile; ?>
     </div>
   </div>
 </section>
