@@ -55,7 +55,9 @@
         <div class="container">
           <div class="main-brand">
             <div class="navbar-brand" >
+              <a href="<?php echo bloginfo('url'); ?>">
               <img class="nombre-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg"> 
+              </a>
             </div>
             <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
               <span class="hamburger-box">
@@ -74,19 +76,19 @@
                 </div>
               </div>
               <li class="nav-item">
-                <a class="nav-link nav-link__mobile active" href="about.html">Humberto Montes</a>
+                <a class="nav-link nav-link__mobile active" href="<?php echo bloginfo('url'); ?>/about">Humberto Montes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="eventos.html">Eventos</a>
+                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/eventos">Eventos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="diplomados.html">Diplomados</a>
+                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/diplomados">Diplomados</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="peregrinaje.html">Peregrinaje</a>
+                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/peregrinaje">Peregrinaje</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="libros.html">Libros</a>
+                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/libros">Libros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link__mobile" href="#testimonio">Testimonios</a>
