@@ -69,13 +69,24 @@
                 </div>
                 <div class="main-card__text">
                   <h3 class="color-primary no-mt"><?php the_title(); ?></h3>
-                  <p>
+                  <p class="text-info">
                     <i class="fa fa-phone">
-                    0424 2740589  0424 117 3470   0412 128 8201
+                      <a href="">
+                        0424 2740589
+                      </a>
+                      <a href="">
+                        0424 117 3470
+                      </a>
+                      <a href="">
+                        0412 128 8201
+                      </a>
+                           
                     </i>
                     <br>
                     <i class="fa fa-envelope-o">
-                    humbertomontes@gmail.com
+                      <a href="">
+                        humbertomontes@gmail.com
+                      </a>
                     </i>
                   </p>
                 </div>
