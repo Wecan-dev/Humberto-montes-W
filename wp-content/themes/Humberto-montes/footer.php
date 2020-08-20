@@ -48,12 +48,9 @@
         </button>
       </div>
       <div class="modal-body">
-        ...
+       <?php echo do_shortcode('[user_registration_form id="86"]'); ?>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+     
     </div>
   </div>
 </div>
