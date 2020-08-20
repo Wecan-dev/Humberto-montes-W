@@ -2812,6 +2812,10 @@ hr{
 		color: #2196f3;
 		text-decoration: none;
 	}
+	.box_general{
+		margin-top: -7rem;
+		background-color: #fff;
+	}
 	.box-grid{
 		margin-top: 2rem;
 	}
