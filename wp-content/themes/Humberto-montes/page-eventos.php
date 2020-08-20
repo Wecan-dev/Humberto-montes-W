@@ -60,7 +60,7 @@
     </div>
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-todos" role="tabpanel" aria-labelledby="nav-todos-tab">
-        <div class="box-grid">
+        <div class="box-grid box-grid__col2">
         <?php $loop = new WP_Query( 'product_type=product&product_cat=eventos' ); ?>
           <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
               <div class="main-card">
@@ -85,7 +85,7 @@
         
       </div>
       <div class="tab-pane fade" id="nav-colombia" role="tabpanel" aria-labelledby="nav-colombia-tab">
-         <div class="box-grid">
+         <div class="box-grid box-grid__one">
  <?php $loop = new WP_Query( 'product_type=product&product_cat=Colombia' ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
