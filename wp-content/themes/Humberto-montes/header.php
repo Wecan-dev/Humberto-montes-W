@@ -77,7 +77,7 @@
                 </div>
               </div>
               <li class="nav-item">
-                <a class="nav-link nav-link__mobile active" href="<?php echo bloginfo('url'); ?>/about">Humberto Montes</a>
+                <a class="nav-link nav-link__mobile active" href="<?php echo bloginfo('url'); ?>/quienes-somos">Humberto Montes</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/eventos">Eventos</a>

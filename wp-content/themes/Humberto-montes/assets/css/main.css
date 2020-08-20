@@ -1118,13 +1118,13 @@ input[type="tel"],
 input[type="email"],
 input[type="number"] {
 	width: 58%;
-	background-image: linear-gradient(#2196f3, #2196f3),linear-gradient(#d2d2d2, #d2d2d2);
+	/* background-image: linear-gradient(#2196f3, #2196f3),linear-gradient(#d2d2d2, #d2d2d2); */
 	background-size: 0 2px,100% 1px;
 	background-repeat: no-repeat;
 	background-position: center bottom,center calc(100% - 1px);
 	background-color: transparent;
 	border: 0;
-	background-image: -webkit-linear-gradient(#2196f3, #2196f3),-webkit-linear-gradient(#d2d2d2, #d2d2d2);
+	/* background-image: -webkit-linear-gradient(#2196f3, #2196f3),-webkit-linear-gradient(#d2d2d2, #d2d2d2); */
 	/* margin: 28px 0 0; */
 	color :#bdbdbd;
 	padding: 10px 0;
@@ -1313,10 +1313,13 @@ textarea{
 	font-weight: 800;
 }
 .main-about__background{
-	background-image: url('http://www.humbertomontes.com/assets/img/humberto.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 500px;
+}
+
+.main-about__cuadro1 p:nth-child(2),.main-about__cuadro1 .main-dropdown__text--border{
+	display: none;
 }
 .main-about{
 	margin-top: -52px;
@@ -1747,10 +1750,13 @@ hr{
 	grid-gap: 30px;
 }
 .main-libros__card{
-	text-align: center;
-	border-bottom: solid 3px #ff9800;
-	border-radius: 3px;
-	min-height: 180px;
+    text-align: center;
+    border-bottom: solid 3px #ff9800;
+    border-radius: 3px;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main-libros__compra--venezuela{
 	text-align: center;
@@ -2683,4 +2689,54 @@ hr{
 		.container-contacto{
 			width: 100%;
 		}
+	}
+
+	#sb_instagram #sbi_load, #sb_instagram .sb_instagram_header {
+		opacity: 1;
+		transition: all .5s ease-in;
+		display: none !important;
+	}
+
+
+
+
+
+	.woocommerce{
+		padding: 5rem 0 !important;
+		height: 85vh !important;
+	}
+	.woocommerce #content table.cart img, .woocommerce table.cart img, .woocommerce-page #content table.cart img, .woocommerce-page table.cart img{
+		width: 160px !important;
+	}
+	.product-name a{
+		color: #212529 !important;
+	}
+	.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+		background-color: #2196f3 !important;
+		color: #fff;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	.woocommerce form .form-row {
+		padding: 3px;
+		margin: 0 0 6px;
+		display: flex !important;
+		flex-direction: column !important;
+	}
+	.select2-container--default .select2-selection--single {
+		background-color: #fff;
+		border: none !important;
+		border-radius: 0px !important;
+		border-bottom: 2px solid #218efb !important;
+	}
+	.woocommerce ul.order_details {
+		margin: 0 0 2em;
+		list-style: none;
+		padding-left: 0 !important;
+	}
+	.woocommerce-MyAccount-navigation ul{
+		display: flex!important;
+    padding-left: 0!important;
+    list-style: none!important;
+    justify-content: space-between!important;
 	}
