@@ -85,7 +85,6 @@
         
       </div>
       <div class="tab-pane fade" id="nav-colombia" role="tabpanel" aria-labelledby="nav-colombia-tab">
-
  <?php $loop = new WP_Query( 'product_type=product&product_cat=Colombia' ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
@@ -227,6 +226,7 @@
           <?php endwhile; ?>
       </div>
     
+
     </div>
   </div>
 </section>
