@@ -31,7 +31,8 @@
                   <?php $boton_de_comprar = get_field( 'boton_de_comprar' ); ?>
                   <?php if ( $boton_de_comprar ) : ?>
                     <a class="btn btn-blue__banner" href="<?php echo esc_url( $boton_de_comprar['url'] ); ?>" target="<?php echo esc_attr( $boton_de_comprar['target'] ); ?>"><?php echo esc_html( $boton_de_comprar['title'] ); ?>
-                    <i class="fa fa-amazon fa-lg"></i>
+                    <!-- <i class="fa fa-amazon fa-lg"></i> -->
+                    <i class="fa fa-caret-right fa-lg"></i>
                     </a>
                   <?php endif; ?>
                 </div>
