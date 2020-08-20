@@ -81,8 +81,25 @@
         </div>
         
       </div>
-      <div class="tab-pane fade" id="nav-colombia" role="tabpanel" aria-labelledby="nav-colombia-tab">...</div>
-      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+      <div class="tab-pane fade" id="nav-colombia" role="tabpanel" aria-labelledby="nav-colombia-tab">
+        colombia
+
+      </div>
+      <div class="tab-pane fade" id="nav-estadosunidos" role="tabpanel" aria-labelledby="nav-estadosunidos-tab">
+        estados unidos
+      </div>
+      <div class="tab-pane fade" id="nav-mexico" role="tabpanel" aria-labelledby="nav-mexico-tab">
+        mexico
+      </div>
+      <div class="tab-pane fade" id="nav-peru" role="tabpanel" aria-labelledby="nav-peru-tab">
+        peru
+      </div>
+      <div class="tab-pane fade" id="nav-venezuela" role="tabpanel" aria-labelledby="nav-venezuela-tab">
+        venezuela
+      </div>
+      <div class="tab-pane fade" id="nav-otros" role="tabpanel" aria-labelledby="nav-otros-tab">
+        otros
+      </div>
     </div>
   </div>
 </section>

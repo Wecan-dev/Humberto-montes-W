@@ -47,7 +47,7 @@
   <link href="<?php echo get_template_directory_uri();?>/assets/css/animate.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/<?php echo get_template_directory_uri();?>/assets/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri();?>/assets/img/favicon.ico">
   <?php wp_head(); ?>
 </head>
 <body>
@@ -99,11 +99,24 @@
               <li class="nav-item">
                 <a class="nav-link nav-link__mobile" href="#contacto">Contactos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="#" data-toggle="modal" data-target="#exampleModal">
-                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                </a>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="nav-link nav-link__mobile" href="#" data-toggle="modal" data-target="#loginModal">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    Inicio de sesion
+                  </a>
+                  </li>
+                  <li>
+                    <a class="nav-link nav-link__mobile" href="#" data-toggle="modal" data-target="#registerModal">
+                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    </a>
+                  </li>
+                </ul>
               </li>
+              
 
 <?php else: ?>
 

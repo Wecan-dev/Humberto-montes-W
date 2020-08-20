@@ -7,7 +7,7 @@
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 <section class="main-banner" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>);">
 
-  <div class="main-banner__content">
+  <div class="">
     <div class="main-banner__item">
         <div class="mask">
           <div class="main-banner__boxtext2 container">
