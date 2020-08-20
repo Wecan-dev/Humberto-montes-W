@@ -104,12 +104,12 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio de sesion <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="nav-link-drop" href="#" data-toggle="modal" data-target="#loginModal">
+                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/inicio-de-sesion" data-toggle="modal" data-target="#loginModal">
                       Inicio de sesion
                     </a>
                   </li>
                   <li>
-                    <a class="nav-link-drop" href="#" data-toggle="modal" data-target="#registerModal">
+                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/registrarse" data-toggle="modal" data-target="#registerModal">
                       Registrarse
                     </a>
                   </li>
