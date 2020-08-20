@@ -1,4 +1,11 @@
 <?php get_header(); ?>
+<section class="main-libro">
+	<div class="mask">
+		<div class="main-cuadro__title">
+			<h1>Diplomados</h1>
+		</div>
+	</div>
+</section>
 <section class="main-cuadro container">
   <div class="main-diplomado__content--cuadro">
     <div class="main-diplamdo__cuadro--title">

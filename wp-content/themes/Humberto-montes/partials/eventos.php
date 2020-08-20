@@ -8,30 +8,20 @@
     </p>
   </div>
   <div class="main-eventos__slider">
-    <div class="main-eventos__slider--content">
-      <div class="main-eventos__slider--items">
-        <div class="main-eventos__silder--img">
-          <img class="img-slider__eventos" src="<?php echo get_template_directory_uri();?>/assets/img/vivir.jpg">
-        </div>
-      </div>
-      <div class="main-eventos__slider--items">
-        <div class="main-eventos__silder--img">
-          <img class="img-slider__eventos" src="<?php echo get_template_directory_uri();?>/assets/img/de_la_oscuridad_a_la_luz.jpg">
-        </div>
-      </div>
-      <div class="main-eventos__slider--items">
-        <div class="main-eventos__silder--img">
-          <img class="img-slider__eventos" src="<?php echo get_template_directory_uri();?>/assets/img/de_la_oscuridad_a_la_luz.jpg">
-        </div>
-      </div>
-      <div class="main-eventos__slider--items">
-        <div class="main-eventos__silder--img">
-          <img class="img-slider__eventos" src="<?php echo get_template_directory_uri();?>/assets/img/de_la_oscuridad_a_la_luz.jpg">
-        </div>
-      </div>
+    <div class="main-eventos__slider--content">  
+      <?php $loop = new WP_Query( 'product_type=product&product_cat=eventos' ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+        <a href="<?php the_permalink(); ?>">
+          <div class="main-eventos__slider--items">
+            <div class="main-eventos__silder--img">
+              <img alt="<?php the_title(); ?>" class="img-slider__eventos" src="<?php echo get_the_post_thumbnail_url(); ?>">
+            </div>
+          </div>
+          </a>
+      <?php endwhile; ?>
     </div>
     <div class="main-eventos__btn">
-      <a class="btn btn-eventos" href="">
+      <a href="<?php echo bloginfo('url')?>/eventos" class="btn btn-eventos" href="">
         VER TODOS LOS EVENTOS
         <i class="zmdi zmdi-eye"></i>
       </a>

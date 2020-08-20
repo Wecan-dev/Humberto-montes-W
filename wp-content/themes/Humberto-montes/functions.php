@@ -9,8 +9,8 @@ add_theme_support( 'post-thumbnails' );
 the_post_thumbnail( array(100,100) ); 
 
 
-remove_filter( 'the_content', 'wpautop' );
-remove_filter( 'the_excerpt', 'wpautop' );
+// remove_filter( 'the_content', 'wpautop' );
+// remove_filter( 'the_excerpt', 'wpautop' );
 
 
 /*******truncar cantidad de palabras******/
@@ -104,10 +104,10 @@ function Aliados() {
 		'attributes'            => __( 'Atributos', 'Shipal' ),
 		'parent_item_colon'     => __( 'Artículo principal', 'Shipal' ),
 		'all_items'             => __( 'Todos los Aliados', 'Shipal' ),
-		'add_new_item'          => __( 'Agregar nuevo testimonio', 'Shipal' ),
+		'add_new_item'          => __( 'Agregar nuevo Aliados', 'Shipal' ),
 		'add_new'               => __( 'Añadir nuevo', 'Shipal' ),
-		'new_item'              => __( 'Nuevo testimonio', 'Shipal' ),
-		'edit_item'             => __( 'Editar testimonio', 'Shipal' ),
+		'new_item'              => __( 'Nuevo Aliados', 'Shipal' ),
+		'edit_item'             => __( 'Editar Aliados', 'Shipal' ),
 		'update_item'           => __( 'Actualizar artículo', 'Shipal' ),
 		'view_item'             => __( 'Ver ítem', 'Shipal' ),
 		'view_items'            => __( 'Ver artículos', 'Shipal' ),
@@ -189,7 +189,7 @@ function Testimonios() {
 		'label'                 => __( 'Testimonios', 'Shipal' ),
 		'description'           => __( 'Post Type Description', 'Shipal' ),
 		'labels'                => $labels,
-		'supports'              => array( 'title','editor' ),
+		'supports'              => array( 'title' ),
 		'taxonomies'            => array(  ),
 		'hierarchical'          => false,
 		'public'                => true,
@@ -209,6 +209,9 @@ function Testimonios() {
 
 }
 add_action( 'init', 'Testimonios', 0 );
+
+
+
 
 
 // colocar en el title el nombre de la page 

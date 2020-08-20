@@ -9,7 +9,7 @@
       </p>
     </div>
     <div class="main-dropdown__content container">
-      <div class="main-dropdown__text--content">
+      <div class="main-dropdown__text--content wow fadeInLeft"  data-wow-delay='.5s'>
         <p>
           Desde hace más de 15 años las miles de personas que han asistido a las diferentes conferencias, diplomados, talleres o sesiones terapéuticas, han reportado transformaciones profundas y radicales en sus vidas. <strong> Humberto Montes</strong>  es considerado por muchos un "sanador del alma" o un "maestro" que sabe llegar a lugares donde las personas no se atreven a mirar y dice lo que muchos no se atreven a decir.
         </p>
@@ -30,7 +30,7 @@
           </p>
         </div>
       </div>
-      <div class="content">
+      <div class="content wow fadeInRight"  data-wow-delay='.5s'>
         <div class="accordion">
           <div class="accordion__item open-accordion">
             <div class="accordion__header">

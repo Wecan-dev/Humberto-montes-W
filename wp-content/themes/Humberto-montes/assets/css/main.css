@@ -219,7 +219,13 @@ button:focus{
 }
 .main-banner {
 	position: relative;
-	overflow: hidden;
+    overflow: hidden;
+    background-size: cover;
+    height: 95vh;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-banner .main-banner__item {
@@ -326,6 +332,12 @@ button:focus{
 .cuadro-banner{
 	background-color: rgba(0,0,0,0.3);
 	padding: 25px;
+	color: #adadac !important;
+	font-family: "Lato",sans-serif !important;
+	font-weight: 300;
+	text-shadow: none !important;
+	font-size: 21px !important;
+	line-height: normal !important;
 }
 .cuadro-banner p{
 	color: #adadac !important;
@@ -518,7 +530,7 @@ a{
 .main-dropdown{
 	background-image: url(http://www.humbertomontes.com/assets/img/meeting.jpg);
 	background-attachment: fixed;
-	height: 143vh;
+	height: 58rem;
 	background-size: cover;
 	position: relative;
 
@@ -766,7 +778,8 @@ a{
 .text-aliados{
 	margin-bottom: 0rem;
 	font-family:'Lato', sans-serif;
-	color: #bdbdbd;
+	/* color: #bdbdbd; */
+	color: #fff;
 	font-size: 20px;
 	font-weight: 300;
 }
@@ -910,24 +923,28 @@ a{
 }
 .main-instagram{
 	background-color: #d7def5;
-	padding-top: 50px;
-	padding-bottom: 40px;
+	padding-top: 90px;
+    padding-bottom: 60px;
 }
 
 /*   SECTION-INSTAGRAM   */
 
 /*   SECTION-CONTACTO   */
-
+.text-email a{
+	color: #fff;
+}
+.text-email a:hover{
+	text-decoration: none;
+	color: #2196f3;
+}
 .main-contacto{
 	background-image: url('http://www.humbertomontes.com/assets/img/team2.jpg');
-	height: 107vh;
+	height: 75vh;
 	background-size: cover;
 	background-attachment: fixed;
 	position: relative;
 }
 .main-contacto .mask{
-	
-
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -988,7 +1005,7 @@ a{
 }
 .main-contacto__form--title{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 	width: 100%;
 	padding-bottom: 30px;
 }
@@ -1026,8 +1043,8 @@ a{
 	margin-left: 5px;
 }
 .icono-facebook:hover{
-	background-color: #3b5998;
-	color: white;
+	background-color: #fff;
+	color: #3b5998;;
 	text-decoration: none;
 }
 .icono-twitter{
@@ -1044,8 +1061,8 @@ a{
 	margin-left: 5px;
 }
 .icono-twitter:hover{
-	background-color: #00aced;
-	color: white;
+	background-color: white;
+	color: #00aced;
 	text-decoration: none;
 }
 .icono-youtube{
@@ -1062,8 +1079,8 @@ a{
 	margin-left: 5px;
 }
 .icono-youtube:hover{
-	background-color: #b00;
-	color: white;
+	background-color: white;
+	color: #b00;
 	text-decoration: none;
 }
 .icono-instagram{
@@ -1080,8 +1097,8 @@ a{
 	margin-left: 5px;
 }
 .icono-instagram:hover{
-	background-color: #e4405f;
-	color: white;
+	background-color: white;
+	color: #e4405f;
 	text-decoration: none;
 }
 
@@ -1108,33 +1125,33 @@ input[type="number"] {
 	background-color: transparent;
 	border: 0;
 	background-image: -webkit-linear-gradient(#2196f3, #2196f3),-webkit-linear-gradient(#d2d2d2, #d2d2d2);
-	margin: 28px 0 0;
+	/* margin: 28px 0 0; */
 	color :#bdbdbd;
-	padding-left: 25px;
+	padding: 10px 0;
 	font-family:'Lato', sans-serif;
+	border-bottom: 2px solid #1E90FF;
 
 }
 input:focus {
 	border-bottom: 2px solid #1E90FF;
-	
-	
 	outline: 0;
 	box-shadow: 0 0 0 0.2rem transparent !important;
 	border-radius: 0px;
 
 }
+textarea {
+	border-bottom: 2px solid #1E90FF !important;
+	outline: 0 !important;
+	resize: none;
+	padding: 10px 0;
+}
 textarea:focus {
 	border-bottom: 2px solid #1E90FF !important;
-	
-	
 	outline: 0 !important;
 	/* box-shadow: 0 0 0 0.2rem transparent !important; */
-
-
 }
 textarea{
 	width: 58% !important;
-	
 	background-image: -webkit-linear-gradient(#2196f3, #2196f3),-webkit-linear-gradient(#d2d2d2, #d2d2d2) !important;
 	background-image: linear-gradient(#2196f3, #2196f3),linear-gradient(#d2d2d2, #d2d2d2);
 	background-size: 0 2px,100% 1px !important;
@@ -1147,20 +1164,35 @@ textarea{
 	box-shadow: none !important;
 	margin: 28px 0 0!important ;
 	border-radius: 0 !important;
-	padding: .375rem 21px !important;
 	font-family:'Lato', sans-serif !important;
 	outline: 0 !important;
+	outline: 0 !important;
+	resize: none;
+	border: none !important;
+	border-bottom: 2px solid #1E90FF !important;
+	padding: 10px 0;
 }
 .form-control:focus{
 	border:none;
 }
+.main-contacto__redes{
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+}
 .main-contacto__content{
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 60% 40%;
 }
 .main-contacto__ubicacion{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
+}
+.main-contacto__ubicacion .frm_submit{
+	margin-right: 10px;
+}
+#form_contact-form{
+	width: 80% !important; 
 }
 .btn-blue{
 	background-color: #2196f3;
@@ -1183,11 +1215,6 @@ textarea{
 .btn-gris:hover{
 	background-color: rgba(153,153,153,0.2);
 	color: #f44336;
-}
-.main-contacto__content{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 40px;
 }
 
 
@@ -1306,18 +1333,20 @@ textarea{
 }
 .main-end__content{
 	display: grid;
-	grid-template-columns: 130px 1fr;
+	grid-template-columns: 1fr 1fr;
 }
 .text-end{
 	margin-bottom: 0rem;
-	text-align: center;
+	text-align: right;
 	font-family:'Lato', sans-serif;
 	color: #3b4c55;
 }
 
+.text-end a{
+	color: #019fe8;
+}
+
 /*   FOOTER   */
-
-
 /*  VISTA-DIPLOMADOS  */
 
 .main-diplomado__img{
