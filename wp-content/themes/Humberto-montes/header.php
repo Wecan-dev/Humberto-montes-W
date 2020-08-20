@@ -76,6 +76,8 @@
                   <img class="xs-img" src="assets/img/logo.svg">
                 </div>
               </div>
+
+<?php if(is_home()): ?>
               <li class="nav-item">
                 <a class="nav-link nav-link__mobile active" href="<?php echo bloginfo('url'); ?>/quienes-somos">Humberto Montes</a>
               </li>
@@ -102,6 +104,37 @@
                   <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </a>
               </li>
+
+<?php else: ?>
+
+       <li class="nav-item">
+                <a class="nav-link nav-link__mobile active" href="<?php echo bloginfo('url'); ?>/quienes-somos">Humberto Montes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/eventos">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/diplomados">Diplomados</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/peregrinaje">Peregrinaje</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/libros">Libros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/#testimonio">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/#contacto">Contactos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link__mobile" href="#" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </a>
+              </li>
+<?php endif; ?>
+
               <div class="main-iconos__content">
                 <div class="title-iconos">
                   <h4>
