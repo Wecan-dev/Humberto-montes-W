@@ -270,6 +270,66 @@ function QuienesSomos() {
 add_action( 'init', 'QuienesSomos', 0 );
 
 
+
+
+// Register Custom Testimonios
+function Contacto() {
+
+	$labels = array(
+		'name'                  => _x( 'Contacto', 'Post Type General Name', 'Shipal' ),
+		'singular_name'         => _x( 'Contacto', 'Post Type Singular Name', 'Shipal' ),
+		'menu_name'             => __( 'Contacto', 'Shipal' ),
+		'name_admin_bar'        => __( 'Contacto', 'Shipal' ),
+		'archives'              => __( 'Archivo', 'Shipal' ),
+		'attributes'            => __( 'Atributos', 'Shipal' ),
+		'parent_item_colon'     => __( 'Artículo principal', 'Shipal' ),
+		'all_items'             => __( 'Todos los Contacto', 'Shipal' ),
+		'add_new_item'          => __( 'Agregar nuevo', 'Shipal' ),
+		'add_new'               => __( 'Añadir nuevo', 'Shipal' ),
+		'new_item'              => __( 'Nuevo', 'Shipal' ),
+		'edit_item'             => __( 'Editar', 'Shipal' ),
+		'update_item'           => __( 'Actualizar artículo', 'Shipal' ),
+		'view_item'             => __( 'Ver ítem', 'Shipal' ),
+		'view_items'            => __( 'Ver artículos', 'Shipal' ),
+		'search_items'          => __( 'Buscar artículo', 'Shipal' ),
+		'not_found'             => __( 'Extraviado', 'Shipal' ),
+		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'Shipal' ),
+		'featured_image'        => __( 'Foto principal', 'Shipal' ),
+		'set_featured_image'    => __( 'Establecer imagen destacada', 'Shipal' ),
+		'remove_featured_image' => __( 'Remove featured image', 'Shipal' ),
+		'use_featured_image'    => __( 'Usar como imagen destacada', 'Shipal' ),
+		'insert_into_item'      => __( 'Insertar en el elemento', 'Shipal' ),
+		'uploaded_to_this_item' => __( 'Subido a este artículo', 'Shipal' ),
+		'items_list'            => __( 'Lista de artículos', 'Shipal' ),
+		'items_list_navigation' => __( 'Lista de elementos de navegación', 'Shipal' ),
+		'filter_items_list'     => __( 'Lista de elementos de filtro', 'Shipal' ),
+	);
+	$args = array(
+		'label'                 => __( 'Contacto', 'Shipal' ),
+		'description'           => __( 'Post Type Description', 'Shipal' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title' ),
+		'taxonomies'            => array(  ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-format-quote',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'Contacto', $args );
+
+}
+add_action( 'init', 'Contacto', 0 );
+
+
 // colocar en el title el nombre de la page 
 function wpdocs_filter_wp_title( $title, $sep ) {
 	global $paged, $page;
