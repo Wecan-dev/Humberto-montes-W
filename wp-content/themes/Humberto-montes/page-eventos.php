@@ -61,7 +61,32 @@
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-todos" role="tabpanel" aria-labelledby="nav-todos-tab">
         <div class="box-grid">
-    <?php $loop = new WP_Query( 'product_type=product&product_cat=eventos' ); ?>
+        <?php $loop = new WP_Query( 'product_type=product&product_cat=eventos' ); ?>
+          <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+              <div class="main-card">
+                <div class="card-img">
+                  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                </div>
+                <div class="main-card__text">
+                  <h3 class="color-primary no-mt"><?php the_title(); ?></h3>
+                  <p>
+                    <i class="fa fa-phone">
+                    0424 2740589  0424 117 3470   0412 128 8201
+                    </i>
+                    <br>
+                    <i class="fa fa-envelope-o">
+                    humbertomontes@gmail.com
+                    </i>
+                  </p>
+                </div>
+              </div>
+              <?php endwhile; ?>
+        </div>
+        
+      </div>
+      <div class="tab-pane fade" id="nav-colombia" role="tabpanel" aria-labelledby="nav-colombia-tab">
+         <div class="box-grid">
+ <?php $loop = new WP_Query( 'product_type=product&product_cat=Colombia' ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
             <div class="card-img">
@@ -82,32 +107,9 @@
           </div>
           <?php endwhile; ?>
         </div>
-        
-      </div>
-      <div class="tab-pane fade" id="nav-colombia" role="tabpanel" aria-labelledby="nav-colombia-tab">
- <?php $loop = new WP_Query( 'product_type=product&product_cat=Colombia' ); ?>
-      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-          <div class="main-card">
-            <div class="card-img">
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
-            </div>
-            <div class="main-card__text">
-              <h3 class="color-primary no-mt"><?php the_title(); ?></h3>
-              <p>
-                <i class="fa fa-phone">
-                0424 2740589  0424 117 3470   0412 128 8201
-                </i>
-                <br>
-                <i class="fa fa-envelope-o">
-                humbertomontes@gmail.com
-                </i>
-              </p>
-            </div>
-          </div>
-          <?php endwhile; ?>
       </div>
             <div class="tab-pane fade" id="nav-colombia" role="tabpanel" aria-labelledby="nav-colombia-tab">
-
+ <div class="box-grid">
  <?php $loop = new WP_Query( 'product_type=product&product_cat=Colombia' ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
@@ -128,12 +130,13 @@
             </div>
           </div>
           <?php endwhile; ?>
+        </div>
       </div>
 
 
 
   <div class="tab-pane fade" id="nav-estadosunidos" role="tabpanel" aria-labelledby="nav-estadosunidos-tab">
-
+ <div class="box-grid">
  <?php $loop = new WP_Query( 'product_type=product&product_cat=Estados Unidos' ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
@@ -154,9 +157,10 @@
             </div>
           </div>
           <?php endwhile; ?>
+        </div>
       </div>
             <div class="tab-pane fade" id="nav-mexico" role="tabpanel" aria-labelledby="nav-mexico-tab">
-
+ <div class="box-grid">
  <?php $loop = new WP_Query( 'product_type=product&product_cat=Mexico' ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
@@ -177,9 +181,10 @@
             </div>
           </div>
           <?php endwhile; ?>
+        </div>
       </div>
             <div class="tab-pane fade" id="nav-peru" role="tabpanel" aria-labelledby="nav-peru-tab">
-
+ <div class="box-grid">
  <?php $loop = new WP_Query( 'product_type=product&product_cat=Perú' ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
@@ -200,15 +205,16 @@
             </div>
           </div>
           <?php endwhile; ?>
+        </div>
       </div>
 
                  <div class="tab-pane fade" id="nav-venezuela" role="tabpanel" aria-labelledby="nav-venezuela-tab">
-
+ <div class="box-grid">
  <?php $loop = new WP_Query( 'product_type=product&product_cat=Venezuela' ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
             <div class="card-img">
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+              <img class="img-fluid"> src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
             </div>
             <div class="main-card__text">
               <h3 class="color-primary no-mt"><?php the_title(); ?></h3>
@@ -224,6 +230,7 @@
             </div>
           </div>
           <?php endwhile; ?>
+        </div>
       </div>
     
 
