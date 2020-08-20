@@ -100,18 +100,17 @@
                 <a class="nav-link nav-link__mobile" href="#contacto">Contactos</a>
               </li>
 
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <li class="nav-item nav-item__last dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio de sesion <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="nav-link nav-link__mobile" href="#" data-toggle="modal" data-target="#loginModal">
-                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                    Inicio de sesion
-                  </a>
+                    <a class="nav-link-drop" href="#" data-toggle="modal" data-target="#loginModal">
+                      Inicio de sesion
+                    </a>
                   </li>
                   <li>
-                    <a class="nav-link nav-link__mobile" href="#" data-toggle="modal" data-target="#registerModal">
-                      <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    <a class="nav-link-drop" href="#" data-toggle="modal" data-target="#registerModal">
+                      Registrarse
                     </a>
                   </li>
                 </ul>
@@ -141,11 +140,22 @@
               <li class="nav-item">
                 <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/#contacto">Contactos</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="#" data-toggle="modal" data-target="#exampleModal">
-                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                </a>
+              <li class="nav-item nav-item__last dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio de sesion <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="nav-link-drop" href="#" data-toggle="modal" data-target="#loginModal">
+                      Inicio de sesion
+                  </a>
+                  </li>
+                  <li>
+                    <a class="nav-link-drop" href="#" data-toggle="modal" data-target="#registerModal">
+                      Registrarse
+                    </a>
+                  </li>
+                </ul>
               </li>
+             
 <?php endif; ?>
 
               <div class="main-iconos__content">
