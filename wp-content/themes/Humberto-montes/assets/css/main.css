@@ -2740,3 +2740,47 @@ hr{
     list-style: none!important;
     justify-content: space-between!important;
 	}
+
+	/* EVENTOS*/
+	.box_navs{
+		display: grid;
+		grid-template-columns: 60% 20% 20%;
+	}
+	.box_nav h4{
+		color: gray;
+		font-size: 15px;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		padding: 10px;
+	}
+	.nav.nav-tabs-transparent li a {
+		color: rgba(66,66,66,0.7) !important;
+	}
+
+	a.nav-link-tabs {
+		font-weight: 400;
+		padding: .8rem;
+		color: gray !important;
+		text-align: center !important;
+		font-family: 'Lato', sans-serif; 
+		font-size: 18px;
+	}
+	a.nav-link-tabs:hover{
+		text-decoration: none;
+	}
+	.nav-link-tabs.active{
+		color: #2196f3 !important;
+		cursor: pointer;
+		position: relative;
+		-webkit-transition: all cubic-bezier(0, 0, 0.2, 1) 0.5s;
+		transition: all cubic-bezier(0, 0, 0.2, 1) 0.5s;
+		border-bottom: 2px solid  #2196f3;
+		font-family: 'Lato', sans-serif; 
+		font-size: 18px;
+	}
+	.main-card__text {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}

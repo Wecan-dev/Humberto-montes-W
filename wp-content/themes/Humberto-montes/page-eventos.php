@@ -10,21 +10,80 @@
 
 
 <section>
-  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
-    </li>
-  </ul>
-  <div class="tab-content" id="pills-tabContent">
-    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
-    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+  <div class="container">
+    <div class="box_general">
+      <div class="card-header bg-primary">
+        <h3 class="card-title text-center"></h3>
+      </div>
+      <div class="box_navs">
+        <div class="box_nav">
+          <h4 class="text-center no-mb">Paises</h4>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link-tabs active" id="nav-todos-tab" data-toggle="tab" href="#nav-todos" role="tab" aria-controls="nav-todos" aria-selected="true">Todos</a>
+              <a class="nav-item nav-link-tabs" id="nav-colombia-tab" data-toggle="tab" href="#nav-colombia" role="tab" aria-controls="nav-colombia" aria-selected="false">colombia</a>
+              <a class="nav-item nav-link-tabs" id="nav-estadosunidos-tab" data-toggle="tab" href="#nav-estadosunidos" role="tab" aria-controls="nav-estadosunidos" aria-selected="false">Estados unidos</a>
+              <a class="nav-item nav-link-tabs" id="nav-mexico-tab" data-toggle="tab" href="#nav-mexico" role="tab" aria-controls="nav-mexico" aria-selected="false">México</a>
+              <a class="nav-item nav-link-tabs" id="nav-peru-tab" data-toggle="tab" href="#nav-peru" role="tab" aria-controls="nav-peru" aria-selected="false">Perú</a>
+              <a class="nav-item nav-link-tabs" id="nav-venezuela-tab" data-toggle="tab" href="#nav-venezuela" role="tab" aria-controls="nav-venezuela" aria-selected="false">Venezuela</a>
+              <a class="nav-item nav-link-tabs" id="nav-venezuela-tab" data-toggle="tab" href="#nav-venezuela" role="tab" aria-controls="nav-venezuela" aria-selected="false">Otros</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="box_nav">
+          <h4 class="text-center no-mb">Columnas</h4>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link-tabs active" id="nav-col1-tab" data-toggle="tab" href="#nav-col1" role="tab" aria-controls="nav-col1" aria-selected="true">1</a>
+              <a class="nav-item nav-link-tabs" id="nav-col2-tab" data-toggle="tab" href="#nav-col2" role="tab" aria-controls="nav-col2" aria-selected="false">2</a>
+              <a class="nav-item nav-link-tabs" id="nav-col3-tab" data-toggle="tab" href="#nav-col3" role="tab" aria-controls="nav-col3" aria-selected="false">3</a>
+              <a class="nav-item nav-link-tabs" id="nav-col4-tab" data-toggle="tab" href="#nav-col4" role="tab" aria-controls="nav-col4" aria-selected="false">4</a>
+            </div>
+          </nav>
+        </div>
+
+        <div class="box_nav">
+          <h4 class="text-center no-mb">Más Información</h4>
+          <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link-tabs active" id="nav-mostrar-tab" data-toggle="tab" href="#nav-mostrar" role="tab" aria-controls="nav-mostrar" aria-selected="true">Mostrar</a>
+              <a class="nav-item nav-link-tabs " id="nav-ocultar-tab" data-toggle="tab" href="#nav-ocultar" role="tab" aria-controls="nav-ocultar" aria-selected="true">Ocultar</a>
+            </div>
+          </nav>
+        </div>
+
+
+      </div>
+
+
+    </div>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-todos" role="tabpanel" aria-labelledby="nav-todos-tab">
+        <div class="box-grid">
+          <div class="main-card">
+            <div class="card-img">
+              <img src="<?php echo get_template_directory_uri();?>/assets/img/IMG-20181114-WA0027.jpg" alt="">
+            </div>
+            <div class="main-card__text">
+              <h3 class="color-primary no-mt">Diplomado en Facilitación y Coaching Profesional</h3>
+              <p>
+                <i class="fa fa-phone">
+                0424 2740589  0424 117 3470   0412 128 8201
+                </i>
+                <br>
+                <i class="fa fa-envelope-o">
+                humbertomontes@gmail.com
+                </i>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="tab-pane fade" id="nav-colombia" role="tabpanel" aria-labelledby="nav-colombia-tab">...</div>
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+    </div>
   </div>
 </section>
 <section class="main-video container">

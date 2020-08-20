@@ -97,6 +97,11 @@
               <li class="nav-item">
                 <a class="nav-link nav-link__mobile" href="#contacto">Contactos</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link__mobile" href="#" data-toggle="modal" data-target="#exampleModal">
+                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </a>
+              </li>
               <div class="main-iconos__content">
                 <div class="title-iconos">
                   <h4>
