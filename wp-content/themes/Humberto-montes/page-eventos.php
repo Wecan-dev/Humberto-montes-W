@@ -60,12 +60,12 @@
     </div>
     <div class="tab-content" id="nav-tabContent">
       <div class="tab-pane fade show active" id="nav-todos" role="tabpanel" aria-labelledby="nav-todos-tab">
-        <div class="box-grid box-grid__col2">
+        <div class="box-grid box-grid__col1">
         <?php $loop = new WP_Query( 'product_type=product&product_cat=eventos' ); ?>
           <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
               <div class="main-card">
                 <div class="card-img">
-                  <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+                  <img class="img-fluid"  src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                 </div>
                 <div class="main-card__text">
                   <h3 class="color-primary no-mt"><?php the_title(); ?></h3>
@@ -101,7 +101,7 @@
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
             <div class="card-img">
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+              <img class="img-fluid"  src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
             </div>
             <div class="main-card__text">
               <h3 class="color-primary no-mt"><?php the_title(); ?></h3>
@@ -125,7 +125,7 @@
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
             <div class="card-img">
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+              <img class="img-fluid"  src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
             </div>
             <div class="main-card__text">
               <h3 class="color-primary no-mt"><?php the_title(); ?></h3>
@@ -152,7 +152,7 @@
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
             <div class="card-img">
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+              <img class="img-fluid"  src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
             </div>
             <div class="main-card__text">
               <h3 class="color-primary no-mt"><?php the_title(); ?></h3>
@@ -176,7 +176,7 @@
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
             <div class="card-img">
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+              <img class="img-fluid"  src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
             </div>
             <div class="main-card__text">
               <h3 class="color-primary no-mt"><?php the_title(); ?></h3>
@@ -200,7 +200,7 @@
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
             <div class="card-img">
-              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+              <img class="img-fluid"  src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
             </div>
             <div class="main-card__text">
               <h3 class="color-primary no-mt"><?php the_title(); ?></h3>
@@ -225,7 +225,7 @@
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-card">
             <div class="card-img">
-              <img class="img-fluid"> src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
+              <img class="img-fluid"  src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
             </div>
             <div class="main-card__text">
               <h3 class="color-primary no-mt"><?php the_title(); ?></h3>

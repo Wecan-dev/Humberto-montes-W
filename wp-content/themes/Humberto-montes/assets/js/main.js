@@ -57,6 +57,60 @@ $(".hamburger").on("click", function () {
 });
 
 
+/*cambiar col*/
+
+$("#nav-col1-tab").on("click", function () {
+  
+    $('.box-grid').addClass('box-grid__col1');
+    $('.box-grid').removeClass('box-grid__col2');
+    $('.box-grid').removeClass('box-grid__col3');
+    $('.box-grid').removeClass('box-grid__col4');
+    
+});
+
+$("#nav-col2-tab").on("click", function () {
+  
+    $('.box-grid').addClass('box-grid__col2');
+    $('.box-grid').removeClass('box-grid__col1');
+    $('.box-grid').removeClass('box-grid__col3');
+    $('.box-grid').removeClass('box-grid__col4');
+    
+});
+
+$("#nav-col3-tab").on("click", function () {
+  
+    $('.box-grid').addClass('box-grid__col3');
+    $('.box-grid').removeClass('box-grid__col1');
+    $('.box-grid').removeClass('box-grid__col2');
+    $('.box-grid').removeClass('box-grid__col4');
+    
+});
+
+$("#nav-col4-tab").on("click", function () {
+  
+    $('.box-grid').addClass('box-grid__col4');
+    $('.box-grid').removeClass('box-grid__col1');
+    $('.box-grid').removeClass('box-grid__col2');
+    $('.box-grid').removeClass('box-grid__col3');
+    
+});
+
+
+/*Ocultar informacion*/
+
+$("#nav-mostrar-tab").on("click", function () {
+  
+    $('.main-card__text').removeClass('d-none');
+  
+    
+});
+
+$("#nav-ocultar-tab").on("click", function () {
+  
+    $('.main-card__text').addClass('d-none');    
+});
+
+
 
 $('.main-eventos__slider--content').slick({
   infinite: true,
