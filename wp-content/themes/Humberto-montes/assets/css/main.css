@@ -1,3 +1,26 @@
+.ms-preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #33ABE0;
+    z-index: 50000;
+    height: 100%;
+    width: 100%;
+}
+#status{
+	height: 100%;
+}
+.logotipo{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	height: 100%;
+	margin-top: -2rem;
+
+}
 ::-webkit-scrollbar {
 	width: 8px;
 	height: 8px;
@@ -282,6 +305,9 @@ button:focus{
 
 
 }
+.btn-deletedborder{
+	border: none;
+}
 
 .btn-banner{
 	box-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
@@ -501,6 +527,12 @@ a{
 	border: solid 1px #eee;
 	padding: 5px;
 	background-color: #fff;
+	position: relative;
+}
+.main-grid__before--img:after{
+	position: absolute;
+	content: '';
+
 }
 .main-grid__before::after{
 	content: '';
@@ -971,15 +1003,13 @@ a{
 	text-align: center;
 	color: #2196f3;
 }
-.form-group{
-	display: grid;
-	grid-template-columns: 100px 600px;
-}
+
 .form-group label{
-	align-self: center;
-	font-size: 12px;
-	text-align: center;
-	color: #2196f3;
+	font-size: 14px;
+    margin-bottom: 10px;
+	margin-top: 10px;
+	color: #212529;
+	font-weight: 700;
 }
 .contacto{
 	width: 65%;
@@ -1120,7 +1150,8 @@ a{
 input[type="text"],
 input[type="tel"],
 input[type="email"],
-input[type="number"] {
+input[type="number"],
+input[type="password"] {
 	width: 58%;
 	/* background-image: linear-gradient(#2196f3, #2196f3),linear-gradient(#d2d2d2, #d2d2d2); */
 	background-size: 0 2px,100% 1px;
@@ -2703,11 +2734,70 @@ hr{
 
 
 
+	.ur-frontend-form .ur-form-row .ur-form-grid .__PrivateStripeElement, .ur-frontend-form .ur-form-row .ur-form-grid input[type=date], .ur-frontend-form .ur-form-row .ur-form-grid input[type=email], .ur-frontend-form .ur-form-row .ur-form-grid input[type=number], .ur-frontend-form .ur-form-row .ur-form-grid input[type=password], .ur-frontend-form .ur-form-row .ur-form-grid input[type=phone], .ur-frontend-form .ur-form-row .ur-form-grid input[type=text], .ur-frontend-form .ur-form-row .ur-form-grid input[type=timepicker], .ur-frontend-form .ur-form-row .ur-form-grid input[type=url], .ur-frontend-form .ur-form-row .ur-form-grid select, .ur-frontend-form .ur-form-row .ur-form-grid textarea{
+		border: none !important;
+		border-bottom: 2px solid #2196f3 !important;
+	}
+	.form-row{
+		display: flex;
+		flex-direction: column;
+	}
+	.ur-frontend-form  .ur-button-container  button.btn button.ur-submit-button {
+		background-color: #2196f3 !important;
+		color: #fff !important;
+	}
+	.login-form-sesion{
+		margin-bottom: 30px;
+		border: 1px solid #dee0e9;
+		padding: 20px;
+		box-sizing: border-box;
+		width: 70%;
+	}
+	.main-register, .main-login {
+		display: flex !important;
+		justify-content: center !important;
+		margin-top: 3rem !important;
+		flex-direction: column !important;
+		align-items: center !important;
+	}
+	.login-form-sesion input{
+		width: 100% !important;
+	}
+	.login-form-sesion input{
+		width: 100% !important;
+	}
+	.ur-frontend-form {
+		margin-bottom: 30px;
+		border: 1px solid #dee0e9;
+		padding: 20px;
+		box-sizing: border-box;
+		width: 70% !important;
+	}
+	/* .login-form div{
+		display: flex;
+		flex-direction: column;
+	} */
+	.form-row-sesion {
+		display: flex;
+		justify-content: space-between;
+	}
 
-
+	.main-sesion__politicas, .main-sesion__question{
+		text-align: center;
+	}
+	.margin-top-page {
+		padding: 5rem 0;
+		height: 95vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.margin-top-page{
+		padding: 5rem 0;
+	}
 	.woocommerce{
-		padding: 5rem 0 !important;
-		height: 85vh !important;
+		padding: 8rem 0 !important;
+		/* min-height: 85vh !important; */
 	}
 	.woocommerce #content table.cart img, .woocommerce table.cart img, .woocommerce-page #content table.cart img, .woocommerce-page table.cart img{
 		width: 160px !important;

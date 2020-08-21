@@ -1,4 +1,6 @@
 <?php get_header(); ?>
+<?php $loop = new WP_Query( 'product_type=product&product_cat=diplomados' ); ?>
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 <section class="main-libro">
 	<div class="mask">
 		<div class="main-cuadro__title">
@@ -9,7 +11,7 @@
 <section class="main-cuadro container">
   <div class="main-diplomado__content--cuadro">
     <div class="main-diplamdo__cuadro--title">
-      <h2>Formación de Coaching Profesional en Venezuela</h2>
+      <h2><?php the_title(); ?></h2>
     </div>
     <div class="main-diplomado__content--lugares">
       <div class="main-diplomado__lugares--grid">
@@ -151,5 +153,5 @@
 
 </section>
 
-
+<?php endwhile; ?>
 <?php get_footer(); ?>

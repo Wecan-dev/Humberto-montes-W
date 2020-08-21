@@ -28,7 +28,7 @@
     </div>
 
 
-    <div class="login-block -narrow">
+    <div class=" main-register login-block -narrow">
 
       <?php echo do_shortcode('[user_registration_form id="86"]') ?>
 
@@ -57,5 +57,12 @@
   <span class="ir-arriba glyphicon glyphicon-chevron-up">
   </span></section>
 
+
+<style>
+.ur-button-container  button.btn button.ur-submit-button {
+  background-color: #2196f3 !important;
+  color: #fff !important;
+}
+</style>
   <?php  get_footer(); ?>
 

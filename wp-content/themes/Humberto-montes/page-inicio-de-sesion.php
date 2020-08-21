@@ -29,20 +29,20 @@ if(is_user_logged_in() != NULL)
 <?php get_template_part('partials/header-general'); ?>
 <section id="iniciar-sesion" class="margin-top-page">
   <div class="container">
+   
+
+    <div class="login-box">
+
     <div class="title-page text-center">
       <h2><strong>Iniciar Sesión</strong></h2>
      
     </div>
-
-    <div class="login-box">
-
-
       <div class="login-block">
 
         <!--        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div> -->
         
 
-        <div class="login-block -narrow">
+        <div class="login-block main-login -narrow">
 
           <?php
 
@@ -74,7 +74,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
   
   <?php do_action( 'woocommerce_login_form' ); ?>
   
-  <p class="form-row form-row-sesion ">
+  <p class=" form-row-sesion ">
     <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
       
       <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" checked="checked" /> <strong><?php esc_html_e( 'Recuerdame', 'woocommerce' ); ?></strong>
@@ -83,7 +83,7 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
   </p>
   <div class="action-login text-center">  
     <?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
-    <button type="submit" class="btn_custom btn--large btn--filledBlack" name="login" value="<?php esc_attr_e( 'Log in', 'woocommerce' ); ?>"><?php esc_html_e( 'Iniciar Sesión', 'woocommerce' ); ?></button>
+    <button type="submit" class="btn-blue btn-deletedborder" name="login" value="<?php esc_attr_e( 'Log in', 'woocommerce' ); ?>"><?php esc_html_e( 'Iniciar Sesión', 'woocommerce' ); ?></button>
   </div>
 
   <?php do_action( 'woocommerce_login_form_end' ); ?>
@@ -98,8 +98,6 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 <?php do_action( 'woocommerce_after_customer_login_form' ); ?>
 
-</div>
-
 <div class="main-sesion__politicas">
   <p class="font-general">Al clickear en ‘Registrarte’ aceptas nuestros 
     <a href="">términos y condiciones</a>, <a href="">políticas de privacidad</a> y 
@@ -113,6 +111,8 @@ do_action( 'woocommerce_before_customer_login_form' ); ?>
     <a  class="btn_custom btn--medium btn--filledTransparentB" href="<?php echo get_home_url() ?>/index.php/registrarse"> Crea una en segundos</a>
   </div>
 </div>
+</div>
+
 
 </div>
 

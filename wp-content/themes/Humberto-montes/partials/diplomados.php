@@ -5,6 +5,7 @@
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class="main-grid__before--img">
         <img alt="<?php the_title(); ?>" class="img-before" src="<?php echo get_the_post_thumbnail_url(); ?>">
+        <p><?php the_title(); ?></p>
       </div>
     <?php endwhile; ?>
   </div>

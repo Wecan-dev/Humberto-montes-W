@@ -51,13 +51,21 @@
   <?php wp_head(); ?>
 </head>
 <body>
+<!-- <div class="ms-preload" id="ms-preload" >
+  <div id="status">
+    <div class="logotipo">
+      <img alt="Logotipo" class="center-block img-responsive" src="<?php echo get_template_directory_uri();?>/assets/img/logo_vertical.svg">
+      <img alt="..." class="center-block img-responsive" src="<?php echo get_template_directory_uri();?>/assets/img/preload.gif">
+    </div>
+  </div>
+</div> -->
   <header id="home">
     <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js">
         <div class="container">
           <div class="main-brand">
             <div class="navbar-brand" >
-              <a href="<?php echo bloginfo('url'); ?>">
-              <img class="nombre-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg"> 
+              <a href="<?php echo bloginfo('url'); ?>/">
+                <img class="nombre-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg"> 
               </a>
             </div>
             <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
@@ -104,12 +112,12 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio de sesion <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/inicio-de-sesion" data-toggle="modal" data-target="#loginModal">
+                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/inicio-de-sesion" >
                       Inicio de sesion
                     </a>
                   </li>
                   <li>
-                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/registrarse" data-toggle="modal" data-target="#registerModal">
+                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/registrarse">
                       Registrarse
                     </a>
                   </li>
@@ -144,12 +152,12 @@
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio de sesion <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="nav-link-drop" href="#" data-toggle="modal" data-target="#loginModal">
+                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/inicio-de-sesion" >
                       Inicio de sesion
-                  </a>
+                    </a>
                   </li>
                   <li>
-                    <a class="nav-link-drop" href="#" data-toggle="modal" data-target="#registerModal">
+                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/registrarse">
                       Registrarse
                     </a>
                   </li>
