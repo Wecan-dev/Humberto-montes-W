@@ -3,7 +3,7 @@
 
 <?php $loop = new WP_Query( 'product_type=product&product_cat=libros' ); ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-	<section class="main-libro">
+	<section class="main-libro" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/libro.jpg');">
 		<div class="mask">
 			<div class="main-cuadro__title">
 				<h1>Libros</h1>

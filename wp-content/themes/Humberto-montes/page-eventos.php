@@ -1,5 +1,5 @@
 <?php get_header();?>
-<section class="main-eventos__background">
+<section class="main-eventos__background" style="background-image: url('<?php echo get_template_directory_uri();?>/assets/img/meeting2.jpg');">
 
   <div class="main-cuadro__title">
     <h1>EVENTOS</h1>

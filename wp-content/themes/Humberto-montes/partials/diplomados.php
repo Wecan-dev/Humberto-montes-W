@@ -5,7 +5,14 @@
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class="main-grid__before--img">
         <img alt="<?php the_title(); ?>" class="img-before" src="<?php echo get_the_post_thumbnail_url(); ?>">
-        <p><?php the_title(); ?></p>
+        <div class="ms-thumbnail-caption-content">
+          <h3 class="ms-thumbnail-caption-title"><?php the_title(); ?></h3>
+          <!-- <p><?php the_title(); ?></p> -->
+          <a class="btn btn-white" href="#">
+            <i class="zmdi zmdi-eye"></i>
+            Ver más
+          </a>
+        </div>
       </div>
     <?php endwhile; ?>
   </div>
