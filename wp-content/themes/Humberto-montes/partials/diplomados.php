@@ -8,10 +8,17 @@
         <div class="ms-thumbnail-caption-content">
           <h3 class="ms-thumbnail-caption-title"><?php the_title(); ?></h3>
           <!-- <p><?php the_title(); ?></p> -->
-          <a class="btn btn-white" href="#">
+			
+			<?php $enlace = get_field( 'enlace' ); ?>
+<?php if ( $enlace ) : ?>
+			<a class="btn btn-white" href="<?php echo esc_url( $enlace['url'] ); ?>" target="<?php echo esc_attr( $enlace['target'] ); ?>">
             <i class="zmdi zmdi-eye"></i>
-            Ver más
+            <?php echo esc_html( $enlace['title'] ); ?>
           </a>
+<?php endif; ?>
+          
+			
+			
         </div>
       </div>
     <?php endwhile; ?>
