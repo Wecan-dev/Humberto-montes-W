@@ -64,7 +64,7 @@ if ( post_password_required() ) {
 				do_action( 'woocommerce_single_product_summary' );
 				?>
 
-				<p><?php echo the_content(); ?></p>
+				<p><?php  the_content(); ?></p>
 				<p><?php echo $product->get_price_html(); ?></p>
 			</div>
 		</div>

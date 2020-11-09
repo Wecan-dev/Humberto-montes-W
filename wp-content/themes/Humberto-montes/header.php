@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -51,21 +50,14 @@
   <?php wp_head(); ?>
 </head>
 <body>
-<!-- <div class="ms-preload" id="ms-preload" >
-  <div id="status">
-    <div class="logotipo">
-      <img alt="Logotipo" class="center-block img-responsive" src="<?php echo get_template_directory_uri();?>/assets/img/logo_vertical.svg">
-      <img alt="..." class="center-block img-responsive" src="<?php echo get_template_directory_uri();?>/assets/img/preload.gif">
-    </div>
-  </div>
-</div> -->
+
   <header id="home">
     <nav class="navbar navbar-expand-lg fixed-top navbar-fixed-js">
         <div class="container">
           <div class="main-brand">
             <div class="navbar-brand" >
               <a href="<?php echo bloginfo('url'); ?>/">
-                <img class="nombre-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo.svg"> 
+                <img class="nombre-logo" src="<?php echo get_template_directory_uri();?>/assets/img/logo1.png"> 
               </a>
             </div>
             <button class="navbar-toggler p-2 border-0 hamburger hamburger--elastic ml-autos" data-toggle="offcanvas" type="button">
@@ -80,89 +72,119 @@
                 <div class="main-nav__img">
                   <img class="img-nav__xs" src="http://www.humbertomontes.com/assets/img/bg-slidebar.png" alt="">
                 </div>
-                <div class="main-img__logo">
+                <!--<div class="main-img__logo">
                   <img class="xs-img" src="assets/img/logo.svg">
-                </div>
+                </div>-->
               </div>
 
 <?php if(is_home()): ?>
               <li class="nav-item">
-                <a class="nav-link nav-link__mobile active" href="<?php echo bloginfo('url'); ?>/quienes-somos">Humberto Montes</a>
+                <a class="nav-link nav-link__mobile active" href="<?php echo bloginfo('url'); ?>/quien-soy">Quien soy</a>
+				
               </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/eventos">Eventos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/diplomados">Diplomados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/peregrinaje">Peregrinaje</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/libros">Libros</a>
-              </li>
+				  <li class="nav-item dropdown show">
+				  <a class=" nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						 Campus Online
+					 </a>
+
+				  <div class="" aria-labelledby="dropdownMenuLink">
+					<ul class="dropdown-menu">
+					  <li>
+						<a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/eventos">Eventos</a>
+					  </li>
+					  <li>
+						<a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/diplomados">Diplomados</a>
+					  </li>
+					  <li>
+						<a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/libros">Libros</a>
+					  </li>
+					</ul>
+				  </div>
+				</li>
+	
+			
               <li class="nav-item">
                 <a class="nav-link nav-link__mobile" href="#testimonio">Testimonios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link__mobile" href="#contacto">Contactos</a>
               </li>
+				 <li class="nav-item dropdown show">
+				  <a class=" nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Inicio de sesión
+				  </a>
 
-              <li class="nav-item nav-item__last dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio de sesion <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/inicio-de-sesion" >
-                      Inicio de sesion
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/registrarse">
-                      Registrarse
-                    </a>
-                  </li>
-                </ul>
-              </li>
+				  <div class="" aria-labelledby="dropdownMenuLink">
+					<ul class="dropdown-menu">
+					  <li>
+						<a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/inicio-de-sesion" >
+						  Inicio de sesión
+						</a>
+					  </li>
+					  <li>
+						<a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/registrarse">
+						  Registrarse
+						</a>
+					  </li>
+					</ul>
+				  </div>
+				</li>
+            
               
 
 <?php else: ?>
 
        <li class="nav-item">
-                <a class="nav-link nav-link__mobile active" href="<?php echo bloginfo('url'); ?>/quienes-somos">Humberto Montes</a>
+                <a class="nav-link nav-link__mobile active" href="<?php echo bloginfo('url'); ?>/quien-soy">Quien soy</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/eventos">Eventos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/diplomados">Diplomados</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/peregrinaje">Peregrinaje</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/libros">Libros</a>
-              </li>
+				 <li class="nav-item dropdown show">
+					 <a class=" nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						 Campus Online
+					 </a>
+				  <div class="" aria-labelledby="dropdownMenuLink">
+					<ul class="dropdown-menu">
+					  <li>
+						<a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/eventos">Eventos</a>
+					  </li>
+					  <li>
+						<a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/diplomados">Diplomados</a>
+					  </li>
+					  <li>
+						<a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/libros">Libros</a>
+					  </li>
+					</ul>
+				  </div>
+				</li>
+				
+			  
+		
+			
               <li class="nav-item">
                 <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/#testimonio">Testimonios</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link__mobile" href="<?php echo bloginfo('url'); ?>/#contacto">Contactos</a>
               </li>
-              <li class="nav-item nav-item__last dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inicio de sesion <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/inicio-de-sesion" >
-                      Inicio de sesion
-                    </a>
-                  </li>
-                  <li>
-                    <a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/registrarse">
-                      Registrarse
-                    </a>
-                  </li>
-                </ul>
-              </li>
+              <li class="nav-item dropdown show">
+				  <a class=" nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Inicio de sesión
+				  </a>
+
+				  <div class="" aria-labelledby="dropdownMenuLink">
+					<ul class="dropdown-menu">
+					  <li>
+						<a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/inicio-de-sesion" >
+						  Inicio de sesion
+						</a>
+					  </li>
+					  <li>
+						<a class="nav-link-drop" href="<?php echo bloginfo('url'); ?>/registrarse">
+						  Registrarse
+						</a>
+					  </li>
+					</ul>
+				  </div>
+				</li>
              
 <?php endif; ?>
 

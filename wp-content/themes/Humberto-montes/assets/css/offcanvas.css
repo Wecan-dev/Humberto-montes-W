@@ -24,6 +24,7 @@
     right: 33px;
     visibility: visible;
     text-align: center;
+	      background-color: #2296f3;
   }
 }
 
@@ -47,7 +48,9 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
-
+.nav-link-drop{
+	color: #2296f3;
+}
 .nav-underline .nav-link {
   padding-top: .75rem;
   padding-bottom: .75rem;

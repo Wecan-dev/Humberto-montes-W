@@ -12,6 +12,10 @@
 #status{
 	height: 100%;
 }
+.accordion{
+	padding-top: 7px;
+
+}
 .logotipo{
 	display: flex;
     flex-direction: column;
@@ -61,12 +65,16 @@ body{
 button:focus{
 	outline: none;
 }
+.main-peregrinaje__card--img img{
+	    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
 .main-cuadro{
 	padding: 50px 40px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
 	border-radius: 2px;
 	margin-bottom: 60px;
-	margin-top: -100px;
 	position: relative;
 	background: white;
 }
@@ -104,7 +112,7 @@ button:focus{
 	font-family: 'Lato', sans-serif;
 }
 .nombre-logo {
-	width: 12rem;
+	/**width: 12rem;**/
 	margin-top: -1rem;
 }
 .visible-xs{
@@ -179,12 +187,10 @@ button:focus{
 }
 a.dropdown-toggle{
 	border-bottom: 2px solid transparent; 
-	padding-bottom: 5px;
 }
 a.dropdown-toggle:hover{
 	text-decoration: none;
 	border-bottom: 2px solid #fff; 
-	padding-bottom: 5px;
 }
 .nav-top__content {
 	padding: 0 100px;
@@ -1214,6 +1220,7 @@ input[type="password"] {
 	padding: 10px 0;
 	font-family:'Lato', sans-serif;
 	border-bottom: 2px solid #1E90FF;
+	height: 45px;
 
 }
 input:focus {
@@ -1271,7 +1278,7 @@ textarea{
 }
 .main-contacto__ubicacion{
 	display: flex;
-	margin-top: 1rem;
+	margin-top: 80px;
 }
 .main-contacto__ubicacion .frm_submit{
 	margin-right: 10px;
@@ -1281,17 +1288,21 @@ textarea{
 }
 .btn-blue{
 	background-color: #2196f3;
-	color: rgba(255,255,255,0.84);
+	color: rgba(255,255,255,0.84) !important;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
 	font-family:'Lato', sans-serif !important;
 
 	font-weight: 400;
 	padding: 8px 30px;
 }
+.btn-blue a{
+	color:white;
+}
 .btn-blue:hover{
 	background-color: #2196f3;
 	color: rgba(255,255,255,0.84);
 }
+
 .btn-gris{
 	padding: 8px 30px;
 	font-family:'Lato', sans-serif !important;
@@ -1496,6 +1507,8 @@ textarea{
 .main-diplomado__lugares--text p{
 	font-family:'Lato', sans-serif;
 	color: #757575;
+	    text-align: center;
+
 }
 .main-diplomado__lugares--text{
 	padding-top: 20px;
@@ -1606,10 +1619,9 @@ hr{
 	color: #00bcd4;
 }
 .main-diplomado__certificacion{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+
 	padding-top: 40px;
-	grid-gap: 40px;
+	
 }
 .img-certificacion{
 	width: 100%;
@@ -1841,7 +1853,7 @@ hr{
     min-height: 180px;
     display: flex;
     justify-content: center;
-    align-items: center;
+
 }
 .main-libros__compra--venezuela{
 	text-align: center;
@@ -2051,6 +2063,7 @@ a.nav-link-tabs:hover{
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+	    text-align: center;
 }
 .nav-item__last{
 	display: flex;
@@ -2065,7 +2078,7 @@ a.nav-link-tabs:hover{
 	padding: 5px 10px;
 }
 .dropdown-menu li{
-	padding: 15px 0;
+	padding: 10px 0;
 }
 .dropdown-menu li a{
 	color: #2196f3;
@@ -2118,8 +2131,8 @@ a.nav-link-tabs:hover{
 .text-info{
 	text-align: center;
 }
-.text-info a,.text-info i {
-	color: gray !important;
+.text-info i {
+	color: gray;
 }
 .text-info a:hover {
 	color: gray !important;
@@ -2160,6 +2173,8 @@ h2.woocommerce-loop-product__title{
 	color: #2296f3;
 	font-family: 'Lato', sans-serif;
 	margin-top: 1rem;
+	text-align: center;
+	    margin-bottom: 1rem;
 }
 .related.products ul{
 	list-style: none !important;
@@ -2181,6 +2196,9 @@ h2.woocommerce-loop-product__title{
 .summary.entry-summary p{
 	font-family: 'Lato', sans-serif;
 }
+.text-info a{
+	color:gray;
+}
 /*  RESPONSIVE  */
 
 
@@ -2188,6 +2206,14 @@ h2.woocommerce-loop-product__title{
 
 
 @media (min-width: 0px) and (max-width: 767px){
+	.box-grid.box-grid__col2{
+		grid-template-columns: 1fr;
+	}
+	
+	#sb_instagram{
+		height: 200px !important;
+	}
+	
 	.text-end{
 		text-align: center;
 	}
@@ -2294,6 +2320,10 @@ h2.woocommerce-loop-product__title{
 	.main-cuadro__twitter{
 		justify-content: center;
 	}
+	.box-grid .box-grid__col2{
+		display:grid;
+		grid-template-columns: 1fr;
+	}
 	
 
 }
@@ -2313,6 +2343,11 @@ h2.woocommerce-loop-product__title{
 	}
 	.cuadro-banner{
 		padding: 20px;
+		color: #f8f9fa !important;
+		font-size: 19px !important;
+	}
+	.title-cuadro{
+		    margin-bottom: 4px;
 	}
 	.main-banner .mask .main-banner__boxtext{
 		height: 58%;
@@ -2322,6 +2357,7 @@ h2.woocommerce-loop-product__title{
 	}
 	.buttom-banner{
 		justify-content: flex-start;
+		padding-top: 17px;
 	}
 	.main-banner .slick-next{
 		right: 47px;
@@ -2401,7 +2437,7 @@ h2.woocommerce-loop-product__title{
 		width: 100%;
 	}
 	.nav-link.fixed-color {
-		color: #2196f3;
+		color: #fff;
 		transition: .3s ease-in-out;
 		text-align: left;
 	}
@@ -2602,20 +2638,10 @@ h2.woocommerce-loop-product__title{
 			padding: 20px 25px;
 		}
 		.main-peregrinaje__content .slick-dots{
-			bottom: 312px;
+			bottom: 380px;
 		}
 	}
-	@media (min-width: 425px) and (max-width: 550px){
-		.main-peregrinaje__content .slick-dots{
-			bottom: 417px !important;
-		}
-
-	}
-	@media (min-width: 375px) and (max-width: 550px){
-		.main-peregrinaje__content .slick-dots{
-			bottom: 365px;
-		}
-	}
+	
 	@media (min-width: 768px) and (max-width: 991px){
 		.main-peregrinaje__content .slick-dots{
 			bottom: 376px;
@@ -2629,6 +2655,18 @@ h2.woocommerce-loop-product__title{
 	/*  VISTA-LIBROS*/
 
 	@media (min-width: 0px) and (max-width: 767px){
+		.variations tbody{
+			display:block !important;
+		}
+		.product_type_simple{
+			margin-top: 20px;
+    TEXT-ALIGN: CENTER;
+
+		}
+		.text-about__cuadro2{
+			
+    font-size: 15px;
+		}
 		.main-libros__compra{
 			display: grid;
 			grid-template-columns: 1fr;
@@ -2739,6 +2777,7 @@ h2.woocommerce-loop-product__title{
 		.main-contacto__form--title{
 			width: 100%;
 			padding-bottom: 40px;
+			JUSTIFY-CONTENT: CENTER;
 		}
 		.form-group {
 
@@ -2747,7 +2786,7 @@ h2.woocommerce-loop-product__title{
 			width: 100%;
 		}
 		.nav-link.fixed-color {
-			color: #2196f3;
+			color: #fff;
 			transition: .3s ease-in-out;
 			text-align: left;
 		}
@@ -2763,10 +2802,17 @@ h2.woocommerce-loop-product__title{
 
 	}
 	@media (min-width: 768px) and (max-width: 991px){
+		.product_type_simple{
+			    width: 57% !important;
+		}
+		.btn-banner{
+			    padding: 8px 13px;
+		}
 		.main-libros__text--content{
 			display: grid;
 			grid-template-columns: 1fr;
 		}
+		
 		.main-libros__cuadro--title p{
 			font-size: 18px;
 		}
@@ -2858,6 +2904,35 @@ h2.woocommerce-loop-product__title{
 			grid-template-columns: 100px 600px;
 
 		}
+		.main-contacto{
+			    height: 100vh;
+		}
+		textarea{
+			margin: 4px 0 0!important;
+		}
+		.main-contacto__ubicacion{
+			
+    margin-top: 37px;
+		}
+		.frm_full textarea{
+	    height: 60px !important;
+
+}
+#frm_field_5_container{
+	    height: 65px;
+
+}
+		.product_type_simple{
+			    width: 43% !important;
+		}
+		.title-cuadro{
+
+	padding: 19px;
+	margin-bottom: 5px;
+}
+		.buttom-banner{
+			    padding-top: 17px;
+		}
 		.form-group{
 			display: grid;
 			grid-template-columns: 100px 600px;
@@ -2874,7 +2949,8 @@ h2.woocommerce-loop-product__title{
 			line-height: 48px;
 		}
 		.cuadro-banner{
-			padding: 23px;
+			padding: 16px;
+			color: #f8f9fa !important;
 			
 
 		}
@@ -3069,3 +3145,109 @@ h2.woocommerce-loop-product__title{
 			width: 100%;
 		}
 	}
+
+.variations tbody{
+	    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.variations tr{
+	display:grid;
+}
+#ciudad{
+	background-color: #2196f3;
+    color: rgba(255,255,255,0.84) !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    padding: 8px 8px;
+	border: none;
+}
+option{
+	background:white;
+	color:#2196f3;
+}
+#fecha{
+		background-color: #2196f3;
+    color: rgba(255,255,255,0.84) !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    padding: 8px 8px;
+	border: none;
+}
+.reset_variations{
+	background-color: white;
+    color:  #2196f3 !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    padding: 8px 8px;
+	border: none;
+	    margin-left: 20px;
+}
+.reset_variations:hover{
+	text-decoration:none;
+}
+.woocommerce-variation-add-to-cart  button{
+	background-color:white ;
+    color:#2196f3  !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    padding: 8px 8px;
+	border: none;
+}
+.woocommerce-variation-add-to-cart{
+	padding-top:20px;
+}
+.product_meta{
+	padding-top:20px;
+}
+.product_type_simple{
+	display:block;
+		background-color:white ;
+    color:#2196f3  !important;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 400;
+    padding: 8px 8px;
+	border: none;
+	width: 35%;
+	    margin-top: 20px;
+
+}
+.price{
+	display: flex;
+    justify-content: center;
+}
+.product{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.main-card__text a:hover{
+	text-decoration:none;
+}
+.main-about__cuadro2--img img{
+	    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mask-quienes_soy{
+	
+    height: 100%;
+    background-color:#21252973;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.frm_full textarea{
+	    height: 80px;
+
+}
+#frm_field_5_container{
+	    height: 65px;
+
+}
